@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            //name
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_background"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/HeadingTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Info" />
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    style="@style/EditTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Name"
+                    android:inputType="textPersonName" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/emailET"
+                    style="@style/EditTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="write@email.com"
+                    android:inputType="textWebEmailAddress" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/phoneET"
+                    style="@style/EditTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="0123456789"
+                    android:inputType="phone" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/websiteET"
+                    style="@style/EditTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="www.yourwebsite.com"
+                    android:inputType="textWebEditText" >
+                </EditText>
+            </LinearLayout>
+            // Address 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_background"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/HeadingTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/addressLin1ET"
+                    style="@style/EditTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint=" My House No , beside this landmark"
+                    android:inputType="textPersonName" >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <EditText
+                        android:id="@+id/addressLine2ET"
+                        style="@style/EditTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint=" In this Nagar, "
+                        android:layout_weight="1.2"
+                        android:inputType="textPersonName" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/cityET"
+                        style="@style/EditTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:hint="City "
+                        android:inputType="textPersonName" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <EditText
+                        android:id="@+id/stateET"
+                        style="@style/EditTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:hint="State "
+                        android:inputType="textPersonName" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/pinCodeET"
+                        style="@style/EditTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:hint="PIN CODE"
+                        android:inputType="number" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/HeadingTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:background="@drawable/card_background"
+                android:text="Click me" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

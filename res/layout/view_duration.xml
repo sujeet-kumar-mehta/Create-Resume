@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+    <Button
+        android:id="@+id/startDateET"
+        style="@style/HeadingTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/card_background"
+        android:text="start Date" >
+    </Button>
+
+    <Button
+        android:id="@+id/endDateET"
+        style="@style/HeadingTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+          android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/card_background"
+        android:text="end Date" >
+    </Button>
+
+</LinearLayout>
